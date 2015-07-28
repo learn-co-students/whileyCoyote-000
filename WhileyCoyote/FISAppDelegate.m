@@ -15,7 +15,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Write your loop here!
-    
+    NSUInteger anvil = arc4random_uniform(25)+26;
+    NSUInteger steps = 1;
+    while (steps <= anvil) {
+        if(steps % 10 == 0){
+            NSLog(@"YOU'RE CUCKOO!");
+        }
+        if (steps == anvil) {
+            NSLog(@"SMASH!");
+        }
+        NSLog(@"Meep! Meep! - Step %lu\n",steps);
+        steps++;
+    }
     
     
     

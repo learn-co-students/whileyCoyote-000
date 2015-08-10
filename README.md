@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. Get practice using loops.
+1. Practice using loops.
 2. Encounter an infinite loop situation.
 
 ##### Advanced
@@ -26,7 +26,7 @@ do {
 1. Open the `*.xcworkspace` file and navigate to the `application:didFinishLaunchingWithOptions:` method in the `FISAppDelegate.m` implementation file.
 2. Write a `do-while` loop that `NSLog()`s "Meep! Meep!". Write `YES` inside the conditional `()`. 
   * Hit run (`⌘``R`) and watch and your console printouts. You've just created an infinite loop! Hit stop (`⌘``.`).
-3. Declare an `NSUInteger` variable before the `do-while` loop to count the steps. You can name it "steps". Set the loop's conditional to pass if `steps` is less than or equal to `50`.
+3. Declare an `NSUInteger` variable called `steps` before the `do-while` loop in order to count the steps. Start `steps` at `0` ("zero") and set the loop's conditional to pass if `steps` is less than or equal to `50`.
   * Hit run and watch your console printouts. It's an infinite loop again! That's because we're not incrementing our counter inside the loop so the conditional will keep passing forever.
 4. Insert `steps++;` into the loop's implementation body beneath the `NSLog()`. This will add one to `steps` each time the loop runs.
   * Hit run. You should see a total of 51 `Meep! Meep!`s. **Hint:** *Instead of counting the* `Meep! Meep!`*s, think about how you can print the value of the* `steps` *integer along with each* `Meep! Meep!`.

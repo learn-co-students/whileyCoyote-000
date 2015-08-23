@@ -13,8 +13,11 @@
 
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    // Write your loop here!
+    NSInteger steps = 0;
+    do {
+        NSLog(@"Meep meep");
+        steps++;
+    } while (steps<=50);
     
     
     
